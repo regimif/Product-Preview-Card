@@ -1,0 +1,77 @@
+/*  RESUME... 
+
+    IMAGE: Changed desktop image by mobile image;
+    DIRECTION: Changed main element container direction using flex-direction: column;
+    OTHER: Font resize, image resize, button resize according to specified resolutions.
+ */
+
+/* WIDTH */
+@media (max-width: 850px){
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* IMAGES SWAP */
+    .desktop-image{
+        display: none;
+    }
+    
+    .mobile-image{
+        display: flex;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    /* ELEMENT READJUSTMENT */
+    .card-perfume{
+        border-radius: 0 0 1rem 1rem;
+        gap: 1rem;
+    }
+
+    .card-perfume h3{
+        font-size: 1rem;
+    }
+
+    .card-perfume h1{
+        font-size: 2.3rem;
+    }
+    
+    .card-perfume .price .price-discount{
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 450px){
+
+    /* ELEMENT READJUSTMENT */
+    .mobile-image{
+        width: 300px;
+    }
+
+    .card-perfume{
+        width: 300px;
+    }
+
+    .card-perfume h3{
+        font-size: 0.8rem;
+    }
+
+    .card-perfume h1{
+        font-size: 1.5em;  
+    }
+
+    .card-perfume p{
+        font-size: 1rem;
+    }
+
+    .card-perfume .price .price-discount{
+        font-size: 1.8rem;
+    }
+
+    .card-perfume button{
+        flex-basis: 3rem;
+    }
+}

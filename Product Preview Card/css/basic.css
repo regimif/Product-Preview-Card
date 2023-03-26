@@ -1,0 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fraunces', serif, 'Montserrat', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+    background: hsl(30, 38%, 92%);
+    color: hsl(30,30%,30%)
+}

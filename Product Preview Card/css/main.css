@@ -1,0 +1,91 @@
+main{
+    display: flex;
+}
+
+
+/* MOBILE IMAGE (Will Only Appear On Lower Resolutions - responsive.css) */
+.mobile-image{
+    display: none;
+}
+
+/* PERFUME IMAGE STYLE */
+.desktop-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 400px;
+    border-radius: 1rem 0 0 1rem;
+}
+
+
+/* CARD PERFUME TEXT STYLE */
+.card-perfume{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 2.5rem;
+    width: 400px;
+    border-radius: 0 1rem 1rem 0;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.card-perfume h3{
+    letter-spacing: 0.5rem;
+    font-weight: 400;
+}
+
+.card-perfume h1{
+    font-size: 2.7rem;
+}
+
+.card-perfume p{
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Montserrat';
+}
+
+/* PRICE STYLE */
+.card-perfume .price{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card-perfume .price .price-discount{
+    color: hsl(151, 29%, 30%);;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.card-perfume .price .price-original{
+    text-decoration:line-through;
+    color: hsl(0, 0%, 30%);
+    
+}
+
+/* BUTTON */
+.card-perfume button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat';
+
+    flex-basis: 3.5rem;
+    background: hsl(151, 29%, 30%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 0.5rem;
+    gap: 0.5rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+
+    transition: background 0.4s;
+}
+
+.card-perfume button:hover{
+    background: hsl(151, 29%, 20%);
+}
